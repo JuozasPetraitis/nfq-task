@@ -26,19 +26,16 @@ class BookingRoute implements Routes {
       `${this.path}/service/:department`,
       this.bookingController.getServiceBookings
     );
-
     this.router.post(
       this.path,
       validationMiddleware(BookVisitDto),
       this.bookingController.bookVisit
     );
-
     this.router.put(
       `${this.path}/:booking_id`,
 
       this.bookingController.updateVisitStatus
     );
-
     this.router.delete(
       `${this.path}/:reservation_code`,
       this.bookingController.cancelVisit

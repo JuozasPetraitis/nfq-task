@@ -1,11 +1,11 @@
-import { NextFunction, Request, Response } from 'express';
+import { Request, Response } from 'express';
 import { HttpStatus } from '../constant/httpCodes.constant';
 import BookingService from '../service/bookings.service';
 
 class BookingController {
   public bookingService = new BookingService();
 
-  public index = (req: Request, res: Response, next: NextFunction) => {
+  public index = (res: Response) => {
     try {
       res.sendStatus(200);
     } catch (error) {

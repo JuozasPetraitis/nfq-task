@@ -7,8 +7,6 @@ import { Validation } from '../../utility/validation/validation';
 import { useNavigate } from 'react-router-dom';
 import { AxiosError } from 'axios';
 import { LogInFormValues } from '../../interfaces/auth.interface';
-import { useSelector } from 'react-redux';
-import { authState } from '../../store/slice/auth.slice';
 
 const LoginForm = (): JSX.Element => {
   const [errorMessageFromServer, setErrorMessageFromServer] =

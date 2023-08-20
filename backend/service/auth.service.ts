@@ -4,7 +4,7 @@ import { RegisterDto } from '../dto/auth/register.dto';
 import SpecialistRepository from '../repository/specialist.repository';
 import { AuthHelper } from '../helpers/auth/auth.utils';
 import { HttpStatus } from '../constant/httpCodes.constant';
-import jwt, { JwtPayload } from 'jsonwebtoken';
+import jwt from 'jsonwebtoken';
 import { HttpException } from '../interface/httpException.interface';
 import { ObjectId } from 'mongoose';
 

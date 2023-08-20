@@ -1,4 +1,4 @@
-import { NextFunction, Request, Response } from 'express';
+import { Request, Response } from 'express';
 import AuthService from '../service/auth.service';
 import { HttpStatus } from '../constant/httpCodes.constant';
 

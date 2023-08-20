@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-type Props = {};
-
-const ErrorPage = (props: Props) => {
+const ErrorPage = (): JSX.Element => {
   return (
     <div className='flex h-screen flex-col items-center justify-center text-8xl font-semibold'>
       <p>Error - 404</p>

@@ -7,8 +7,6 @@ import useAuth from '../../hooks/Auth/useAuth';
 import { RegisterFormValues } from '../../interfaces/auth.interface';
 import { AxiosError } from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { useSelector } from 'react-redux';
-import { authState } from '../../store/slice/auth.slice';
 
 const RegisterForm = () => {
   const [errorMessageFromServer, setErrorMessageFromServer] = useState<any>();

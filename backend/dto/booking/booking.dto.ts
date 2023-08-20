@@ -1,5 +1,4 @@
-import { IsEmail, IsString, Matches } from 'class-validator';
-import { Service } from '../../model/specialist.model';
+import { IsEmail } from 'class-validator';
 
 export class BookVisitDto {
   @IsEmail()

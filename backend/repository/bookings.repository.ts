@@ -1,5 +1,4 @@
 import { BookingModel } from '../model/booking.model';
-import { Service } from '../model/specialist.model';
 
 export default class BookingRepository {
   public getBookingByReservationCode = async (reservationCode: string) => {

@@ -1,5 +1,5 @@
 import { Schema, model, Document } from 'mongoose';
-import { Service, Specialist } from './specialist.model';
+import { Service } from './specialist.model';
 
 export type VisitStatus = 'finished' | 'cancelled' | 'pending' | 'active';
 
