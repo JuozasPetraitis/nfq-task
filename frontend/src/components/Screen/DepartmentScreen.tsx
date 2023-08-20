@@ -11,7 +11,6 @@ import {
 } from '@heroicons/react/24/solid';
 import { getBookings } from '../../store/slice/booking.slice';
 import { Booking } from '../../interfaces/booking.interface';
-import { Service } from '../../interfaces/specialist.interface';
 
 const DepartmentScreen = () => {
   const dispatch = useDispatch();
@@ -31,7 +30,9 @@ const DepartmentScreen = () => {
       }
     };
 
-    fetchBookings();
+    setTimeout(() => {
+      fetchBookings();
+    }, 3000);
   }, [activeTab]);
 
   const getStatusColor = (status: any) => {
